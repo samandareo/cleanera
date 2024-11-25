@@ -7,12 +7,13 @@
     <title>Cleanera</title>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/layout.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <header class="header">
-        <div class="header-content">
+        <div class="header-content" data-aos="zoom-in" data-aos-duration="1000" data-aos-easing="ease-in-sine">
             <!-- Левая кнопка -->
             <a href="#" class="nav-link button">Регистрация</a>
 
@@ -26,11 +27,13 @@
         </div>
     </header>
 
+    <canvas id="bubble" width="1349" height="68"></canvas>
+
     <!-- Нижняя часть -->
     <section class="lower-section">
         <!-- Изображение слева от текста -->
-        <img src="images/13139_1-removebg-preview (1).png" alt="Cleaning illustration" class="lower-image-left lower-image-left-main">
-        <div class="lower-box">
+        <img src="images/13139_1-removebg-preview (1).png" alt="Cleaning illustration" class="lower-image-left lower-image-left-main" data-aos="fade-up">
+        <div class="lower-box" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
             <p>
                 Мы предлагаем профессиональные услуги уборки для дома и офиса, включая генеральную,
                 ежедневную уборку, мытьё окон и уборку после ремонта. Наша команда гарантирует чистоту,
@@ -41,7 +44,7 @@
     </section>
 
     <section class="lower-section lower-section-2">
-        <div class="lower-box">
+        <div class="lower-box" data-aos="fade-right" data-aos-duration="1000">
             <p>
                 Поиск няни, няни или сиделки — это решение, которое выбирают многие пары, но найти
                 рядом надёжного человека, способного позаботиться о младенце, непросто. Вот почему
@@ -50,17 +53,16 @@
             </p>
         </div>
         <!-- Изображение на правой стороне -->
-        <img src="images/freepik__upload__74404-removebg-preview.png" alt="Babysitting illustration"
-            class="lower-image">
+        <img src="images/freepik__upload__74404-removebg-preview.png" alt="Babysitting illustration" class="lower-image" data-aos="fade-up">
     </section>
 
     <section class="baby-sitting-intro">
-        <h2>Baby Sitting Service</h2>
+        <h2 data-aos="zoom-in" data-aos-duration="500">Baby Sitting Service</h2>
     </section>
 
     <section class="baby-sitting-service">
         <!-- Первая карточка: картинка слева -->
-        <div class="service-box-left">
+        <div class="service-box-left" data-aos="flip-left" data-aos-duration="1000">
             <div class="service-info">
                 <h3>Для Няни</h3>
                 <p>
@@ -78,11 +80,11 @@
             </a>
         </div>
         <div class="service-image-left">
-            <img src="images/freepik__upload__81496-removebg-preview.png" alt="Nanny image" class="service-image" style="position: relative; z-index: 999;">
+            <img src="images/freepik__upload__81496-removebg-preview.png" alt="Nanny image" class="service-image" style="position: relative; z-index: 999;" data-aos="zoom-in-up">
         </div>
 
         <!-- Вторая карточка: картинка справа -->
-        <div class="service-box-right">
+        <div class="service-box-right" data-aos="flip-right" data-aos-duration="1000">
             <div class="service-info">
                 <h3>Для Родителей</h3>
                 <p>
@@ -100,7 +102,7 @@
             </a>
         </div>
         <div class="service-image-right">
-            <img src="images/freepik__upload__71294-removebg-preview.png" alt="Parent image" class="service-image">
+            <img src="images/freepik__upload__71294-removebg-preview.png" alt="Parent image" class="service-image" data-aos="zoom-in-up">
         </div>
     </section>
     <br>
@@ -111,8 +113,9 @@
         <section class="lower-section">
             <!-- Изображение слева от текста -->
             <div class="our-mission">
-                <img src="images\freepik__upload__85109.jpeg" alt="Cleaning illustration" class="lower-image-left lower-image-layout">
-                <div class="mission-right-section">
+                <img src="images\freepik__upload__85109.jpeg" alt="Cleaning illustration" class="lower-image-left lower-image-layout" data-aos="zoom-out-right" data-aos-duration="1000">
+                <div class="mission-right-section" data-aos="fade-up"
+                data-aos-duration="1500">
                     <h2>Наша миссия</h2>
                     <p class="our_mission">
                         Мы предлагаем профессиональные услуги уборки для дома и офиса, включая генеральную,
@@ -277,5 +280,8 @@
 
 
 </body>
-
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+  </script>
 </html>
