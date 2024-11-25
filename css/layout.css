@@ -162,6 +162,42 @@
         font-size: normal;
         text-align: justify;
     }
+
+    .faq-title h2 {
+        font-size: 16px;
+    }
+    .faq-content {
+        width: 85%;
+    }
+
+    .faq-text {
+        justify-content: center;
+    }
+
+    .faq-text p{
+        padding: 0;
+        width: 100%;
+    }
+
+    .faq-image {
+        right: -11px;
+        bottom: -36px;
+        opacity: 0.2;
+    }
+    .faq-image-2 {
+        left: 0;
+        bottom: 5px;
+        opacity: 0.2;
+    }
+
+    .faq-button > a {
+       font-size: 16px; 
+       bottom: -22px;
+    }
+    .faq-button .faq-icon {
+        width: 20px;
+        height: 20px;
+    }
 }
 
 @media (min-width:501px) and (max-width:700px) {
@@ -308,6 +344,35 @@
         width: 100%;
         padding: 0;
     }
+
+    .faq-title h2 {
+        font-size: 18px;
+    }
+    .faq-content {
+        width: 80%;
+    }
+
+    .faq-text {
+        justify-content: start!important;
+    }
+
+    .faq-text p{
+        padding: 0;
+    }
+    .faq-text-2 {
+        justify-content: end!important;
+        text-align: right;
+        text-wrap: wrap;
+    }
+
+    .faq-image {
+        right: -65px;
+        bottom: -70px;
+    }
+    .faq-image-2 {
+        left: -75px;
+        bottom: -25px;
+    }
 }
 
 @media (min-width : 701px) and (max-width:900px) {
@@ -422,6 +487,18 @@
         padding: 0;
     }
 
+    .faq-content {
+        width: 70%;
+    }
+
+    .faq-text-2 {
+        justify-content: end!important;
+        text-align: right;
+    }
+
+    .faq-image-2 {
+        left: -115px;
+    }
 }
 
 @media (min-width: 901px) and (max-width:1024px){
@@ -490,6 +567,10 @@
         width: 600px;
     }
 
+    .faq-content {
+        width: 55%;
+    }
+
     
 }
 @media (min-width: 1025px) and (max-width : 1280px){
@@ -518,6 +599,10 @@
     .object-card {
         width: 28%;
         padding: 25px;
+    }
+
+    .faq-content {
+        width: 50%;
     }
 
  
