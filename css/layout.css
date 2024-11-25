@@ -137,6 +137,31 @@
     .object-description p {
         font-size: small;
     }
+
+    .cs-section-content {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 25px;
+    }
+    .cs-section-title {
+        font-size: 24px;
+    }
+
+    .cs-content-pic img {
+        width: 350px;
+    }
+    
+    .cs-content-text {
+        width: auto;
+    }
+
+    .cs-content-text p {
+        width: 100%;
+        padding: 0;
+        font-size: normal;
+        text-align: justify;
+    }
 }
 
 @media (min-width:501px) and (max-width:700px) {
@@ -260,6 +285,29 @@
     .object-description p {
         font-size: small;
     }
+
+    .cs-section-content {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 25px;
+    }
+    .cs-section-title {
+        font-size: 28px;
+    }
+
+    .cs-content-pic img {
+        width: 400px;
+    }
+    
+    .cs-content-text {
+        width: auto;
+    }
+
+    .cs-content-text p {
+        width: 100%;
+        padding: 0;
+    }
 }
 
 @media (min-width : 701px) and (max-width:900px) {
@@ -351,6 +399,29 @@
     }
 
 
+    .cs-section-content {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 25px;
+    }
+    .cs-section-title {
+        font-size: 28px;
+    }
+
+    .cs-content-pic img {
+        width: 400px;
+    }
+    
+    .cs-content-text {
+        width: auto;
+    }
+
+    .cs-content-text p {
+        width: 100%;
+        padding: 0;
+    }
+
 }
 
 @media (min-width: 901px) and (max-width:1024px){
@@ -405,6 +476,18 @@
     .object-card {
         width: 45%;
         padding: 25px;
+    }
+
+    .cs-section-title {
+        font-size: 28px;
+    }
+
+    .cs-content-pic img {
+        width: 380px;
+    }
+    
+    .cs-content-text {
+        width: 600px;
     }
 
     
