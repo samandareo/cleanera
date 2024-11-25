@@ -1,0 +1,49 @@
+@media screen and (max-width:500px) {
+    .header-content {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .logo-img {
+        width: 240px;
+    }
+    .nav-link.button {
+        padding: 5px 15px;
+        font-size: 12px;
+    }
+}
+
+@media (min-width:501px) and (max-width:700px) {
+
+    .header-content {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .logo-img {
+        width: 270px;
+    }
+
+    .nav-link.button {
+        padding: 5px 20px;
+        font-size: 14px;
+    }
+}
+
+@media (min-width : 701px) and (max-width:900px) {
+    .header-content {
+        width: 100%;
+        padding: 0px 20px;
+    }
+}
+
+@media (min-width: 901px) and (max-width:1024px){
+
+
+    
+}
+@media (min-width: 1025px) and (max-width : 1280px){
+
+    
+ 
+}
