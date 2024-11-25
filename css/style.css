@@ -306,12 +306,13 @@ body {
     width: 80%;
     display: flex;
     flex-direction: row;
-    gap: 50px;
+    justify-content: space-between;
     flex-wrap: wrap;
+    gap: 40px;
 }
 
 .back-image {
-    background: url(./Images/objects-background.webp);
+    background: url(../images/objects-background.webp);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -525,7 +526,7 @@ body {
 
 /* Footer */
 .footer-section {
-    background: url(./Images/footer-background.png);
+    background: url(../images/footer-background.png);
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;

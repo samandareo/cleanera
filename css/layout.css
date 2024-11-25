@@ -16,6 +16,12 @@
         width: 100%;
         padding: 15px;
         column-gap: 10px;
+        flex-direction: column;
+        row-gap: 1px;
+    }
+
+    .lower-section-2 {
+        flex-direction: column-reverse;
     }
 
     .lower-box {
@@ -26,8 +32,11 @@
         font-size: 10px;
     }
 
-    .lower-image-left {
-        max-width: 45%;
+    .lower-image {
+        max-width: 75%;
+    }
+    .lower-image-left-main {
+        max-width: 75%;
         height: auto;
         border-radius: 10px;
         margin-right: 0;
@@ -40,6 +49,7 @@
     }
     .baby-sitting-intro h2 {
         font-size: 2.1rem;
+        margin-bottom: 25px;
     }
 
     .service-box-left {
@@ -99,6 +109,33 @@
     }
     .mission-right-section > h2{
         font-size: 1.6rem;
+    }
+
+
+
+    .container-objects-box {
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .object-card {
+        width: 90%;
+        padding: 25px;
+        border-radius: 20px;
+    }
+
+    .object-title h3 {
+        font-size: 20px;
+    }
+
+    .object-title .object-title-icon {
+        width: 40px;
+        height: 40px;
+    }
+
+    .object-description p {
+        font-size: small;
     }
 }
 
@@ -200,6 +237,29 @@
     .mission-right-section > h2{
         font-size: 1.8rem;
     }
+
+    .container-objects-box {
+        width: 90%;
+    }
+
+    .object-card {
+        width: 45%;
+        padding: 25px;
+        border-radius: 20px;
+    }
+
+    .object-title h3 {
+        font-size: 20px;
+    }
+
+    .object-title .object-title-icon {
+        width: 40px;
+        height: 40px;
+    }
+
+    .object-description p {
+        font-size: small;
+    }
 }
 
 @media (min-width : 701px) and (max-width:900px) {
@@ -276,6 +336,19 @@
         line-height: 26px;
     }
 
+    .object-card {
+        width: 45%;
+        padding: 25px;
+    }
+
+    .object-title h3 {
+        font-size: 20px;
+    }
+
+    .object-title .object-title-icon {
+        width: 40px;
+        height: 40px;
+    }
 
 
 }
@@ -329,6 +402,11 @@
         width: 45%;
     }
 
+    .object-card {
+        width: 45%;
+        padding: 25px;
+    }
+
     
 }
 @media (min-width: 1025px) and (max-width : 1280px){
@@ -351,6 +429,12 @@
 
     .service-box-right {
         padding: 50px;
+    }
+
+
+    .object-card {
+        width: 28%;
+        padding: 25px;
     }
 
  
