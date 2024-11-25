@@ -11,6 +11,78 @@
         padding: 5px 15px;
         font-size: 12px;
     }
+
+    .lower-section {
+        width: 100%;
+        padding: 15px;
+        column-gap: 10px;
+    }
+
+    .lower-box {
+        padding: 10px;
+    }
+
+    .lower-section .lower-box p {
+        font-size: 10px;
+    }
+
+    .lower-image-left {
+        max-width: 45%;
+        height: auto;
+        border-radius: 10px;
+        margin-right: 0;
+    }
+
+    .baby-sitting-service {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .baby-sitting-intro h2 {
+        font-size: 2.1rem;
+    }
+
+    .service-box-left {
+        border: 2px solid #6b38b1;
+        padding: 20px;
+        width: 80%;
+    }
+
+    .service-box-right {
+        border: 2px solid #6b38b1;
+        padding: 20px;
+        width: 80%;
+    }
+
+    .baby-sitting-service {
+        gap: 30px;
+        padding: 5px;
+    }
+
+    .service-info {
+        gap: 5px;
+    }
+    .service-info p {
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    .service-info h3 {
+        font-size: 18px;
+    }
+
+    .service-image-left {
+        display: none;
+    }
+    
+    .service-image-right {
+        display: none;
+    }
+
+    .arrow-link .box {
+        font-size: 14px;
+        padding: 5px 10px;
+    }
 }
 
 @media (min-width:501px) and (max-width:700px) {
@@ -28,6 +100,75 @@
         padding: 5px 20px;
         font-size: 14px;
     }
+
+    .lower-section {
+        width: 100%;
+        padding: 20px;
+        column-gap: 15px;
+    }
+
+    .lower-box {
+        padding: 15px;
+    }
+
+    .lower-section .lower-box p {
+        font-size: 10px;
+    }
+
+    .lower-image-left {
+        max-width: 45%;
+        height: auto;
+        border-radius: 10px;
+        margin-right: 0;
+    }
+
+    .baby-sitting-intro h2 {
+        font-size: 2.1rem;
+    }
+
+    .service-box-left {
+        border: 2px solid #6b38b1;
+        padding: 20px;
+    }
+
+    .service-box-right {
+        border: 2px solid #6b38b1;
+        padding: 20px;
+    }
+
+    .baby-sitting-service {
+        gap: 30px;
+        padding: 5px;
+    }
+
+    .service-info {
+        gap: 5px;
+    }
+    .service-info p {
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    .service-info h3 {
+        font-size: 18px;
+    }
+
+    .service-image-left {
+        left: -10px;
+        bottom: 0;
+    }
+    
+    .service-image-right {
+        right: -25%;
+        bottom: 0;
+        z-index: 1;
+        width: 45%;
+    }
+
+    .arrow-link .box {
+        font-size: 14px;
+        padding: 5px 10px;
+    }
 }
 
 @media (min-width : 701px) and (max-width:900px) {
@@ -35,15 +176,143 @@
         width: 100%;
         padding: 0px 20px;
     }
+
+    .lower-section {
+        width: 100%;
+        padding: 40px;
+    }
+
+    .lower-box {
+        padding: 15px;
+    }
+
+    .lower-section .lower-box p {
+        font-size: small;
+    }
+
+    .lower-image-left {
+        max-width: 45%;
+        height: auto;
+        border-radius: 10px;
+    }
+
+    .baby-sitting-intro h2 {
+        font-size: 2.5rem;
+    }
+
+    .service-box-left {
+        border: 3px solid #6b38b1;
+        padding: 30px;
+    }
+
+    .service-box-right {
+        border: 3px solid #6b38b1;
+        padding: 30px;
+    }
+
+    .baby-sitting-service {
+        gap: 30px;
+        padding: 5px;
+    }
+
+    .service-info {
+        gap: 5px;
+    }
+    .service-info p {
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    .service-image-left {
+        left: 0;
+        bottom: 0;
+    }
+    
+    .service-image-right {
+        right: -25%;
+        bottom: 0;
+        z-index: 1;
+        width: 45%;
+    }
+
+    .arrow-link .box {
+        font-size: 14px;
+        padding: 5px 10px;
+    }
 }
 
 @media (min-width: 901px) and (max-width:1024px){
 
+    .lower-section {
+        width: 100%;
+        padding: 40px;
+    }
+
+    .lower-box {
+        padding: 15px;
+    }
+
+    .lower-section .lower-box p {
+        font-size: large;
+    }
+
+    .baby-sitting-intro h2 {
+        font-size: 3rem;
+    }
+
+    .service-box-left {
+        padding: 45px;
+    }
+
+    .service-box-right {
+        padding: 45px;
+    }
+
+    .baby-sitting-service {
+        gap: 30px;
+        padding: 5px;
+    }
+
+    .service-info p {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    .service-image-left {
+        left: 0;
+        bottom: 0;
+    }
+    
+    .service-image-right {
+        right: -25%;
+        bottom: 0;
+        z-index: 1;
+        width: 45%;
+    }
 
     
 }
 @media (min-width: 1025px) and (max-width : 1280px){
 
-    
+    .lower-section {
+        width: 100%;
+        padding: 40px;
+    }
+    .lower-box {
+        padding: 20px;
+    }
+
+    .baby-sitting-intro h2 {
+        font-size: 3rem;
+    }
+
+    .service-box-left {
+        padding: 50px;
+    }
+
+    .service-box-right {
+        padding: 50px;
+    }
+
  
 }
