@@ -274,10 +274,10 @@
     }
     
     .service-image-right {
-        right: -25%;
+        right: 0;
         bottom: 0;
         z-index: 1;
-        width: 45%;
+        width: 20%;
     }
 
     .arrow-link .box {
@@ -433,10 +433,10 @@
     }
     
     .service-image-right {
-        right: -25%;
+        right: 0;
         bottom: 0;
         z-index: 1;
-        width: 45%;
+        width: 20%;
     }
 
     .arrow-link .box {
@@ -544,10 +544,10 @@
     }
     
     .service-image-right {
-        right: -25%;
+        right: 0;
         bottom: 0;
         z-index: 1;
-        width: 45%;
+        width: 200px;
     }
 
     .object-card {
