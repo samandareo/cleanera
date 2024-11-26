@@ -5,9 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Регистрация заявки</title>
     <style>
-        body {
+        *{
+            padding: 0;
+            margin: 0;
+        }
+
+        .form-wrapper {
             font-family: Arial, sans-serif;
-            background-color: #f8f8f8;
+            background-color: #f8f8f87a;
             margin: 0;
             padding: 0;
             display: flex;
@@ -15,29 +20,29 @@
             align-items: center;
             flex-direction: column;
             min-height: 100vh;
+            position: relative;
         }
 
         .logo {
-            position: absolute;
-            top: -90px;
-            left: 50%;
-            transform: translateX(-50%);
             text-align: center;
+            width: 250px;
+            position: absolute;
+            top: 0;
         }
 
         .logo img {
-            max-width: 250px; /* Максимальная ширина логотипа */
+            width: 100%;/* Максимальная ширина логотипа */
             height: auto;
         }
 
         .container {
-            background-color: white;
+            background-color: #f8f8f8cb;
             padding: 35px;
             border-radius: 10px;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
             width: 500px; /* Уменьшенная ширина контейнера */
             text-align: center;
-            margin-top: 100px; /* Отступ сверху, чтобы не перекрывать логотип */
+            margin-top: 170px; /* Отступ сверху, чтобы не перекрывать логотип */
         }
 
         .form-group {
@@ -85,54 +90,84 @@
         .submit-button:hover {
             background-color: #8d2cf5;
         }
+
+        canvas {
+            width: 100%;
+            height: 100%;
+            position: fixed;
+            z-index: -1;
+        }
+
+        @media screen and (max-width:500px) {
+            .container {
+                width: 80%;
+            }
+
+            .form-wrapper {
+                padding: 5px;
+            }
+        }
+
+        @media (min-width:501px) and (max-width:700px) {
+            .container {
+                width: 90%;
+            }
+            .form-wrapper {
+                padding: 10px;
+            }
+        }
+
     </style>
 </head>
 <body>
+    <div class="form-wrapper">
         <div class="logo">
-        <img src="logo.png" alt="Логотип">
-    </div>
-
-    <div class="container">
-        <form id="nannyForm">
-            <h2>Регистрация заявки для ребёнка</h2>
-            <div class="form-group">
-                <label for="parentName">Ваше имя:</label>
-                <input type="text" id="parentName" placeholder="Введите ваше имя" required>
-            </div>
-            <div class="form-group">
-                <label for="phone">Телефон:</label>
-                <input type="tel" id="phone" placeholder="Введите номер телефона" required>
-            </div>
-            <div class="form-group">
-                <label for="childName">Имя ребёнка:</label>
-                <input type="text" id="childName" placeholder="Введите имя ребёнка" required>
-            </div>
-            <div class="form-group">
-                <label for="childAge">Возраст ребёнка:</label>
-                <input type="number" id="childAge" placeholder="Введите возраст ребёнка" required>
-            </div>
-            <div class="form-group">
-                <label for="startDate">Дата начала:</label>
-                <input type="date" id="startDate" required>
-            </div>
-            <div class="form-group">
-                <label for="endDate">Дата окончания:</label>
-                <input type="date" id="endDate" required>
-            </div>
-            <div class="form-group">
-                <label for="time">Время пребывания:</label>
-                <input type="time" id="time" required>
-            </div>
-            <div class="form-group">
-                <label for="requirements">Дополнительные требования:</label>
-                <textarea id="requirements" placeholder="Например, уход за ребёнком во время сна, приготовление пищи"></textarea>
-            </div>
-            <div class="form-group">
-                <label for="address">Адрес:</label>
-                <input type="text" id="address" placeholder="Введите адрес" required>
-            </div>
-            <button type="submit" class="submit-button">Отправить заявку</button>
-        </form>
+            <img src="./images/logo.png" alt="Логотип">
+        </div>
+        <canvas id="bubble"></canvas>
+        <div class="container">
+            <form id="nannyForm">
+                <h2>Регистрация заявки для ребёнка</h2>
+                <div class="form-group">
+                    <label for="parentName">Ваше имя:</label>
+                    <input type="text" id="parentName" placeholder="Введите ваше имя" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Телефон:</label>
+                    <input type="tel" id="phone" placeholder="Введите номер телефона" required>
+                </div>
+                <div class="form-group">
+                    <label for="childName">Имя ребёнка:</label>
+                    <input type="text" id="childName" placeholder="Введите имя ребёнка" required>
+                </div>
+                <div class="form-group">
+                    <label for="childAge">Возраст ребёнка:</label>
+                    <input type="number" id="childAge" placeholder="Введите возраст ребёнка" required>
+                </div>
+                <div class="form-group">
+                    <label for="startDate">Дата начала:</label>
+                    <input type="date" id="startDate" required>
+                </div>
+                <div class="form-group">
+                    <label for="endDate">Дата окончания:</label>
+                    <input type="date" id="endDate" required>
+                </div>
+                <div class="form-group">
+                    <label for="time">Время пребывания:</label>
+                    <input type="time" id="time" required>
+                </div>
+                <div class="form-group">
+                    <label for="requirements">Дополнительные требования:</label>
+                    <textarea id="requirements" placeholder="Например, уход за ребёнком во время сна, приготовление пищи"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="address">Адрес:</label>
+                    <input type="text" id="address" placeholder="Введите адрес" required>
+                </div>
+                <button type="submit" class="submit-button">Отправить заявку</button>
+            </form>
+        </div>
     </div>
 </body>
+<script src="bubble.js"></script>
 </html>

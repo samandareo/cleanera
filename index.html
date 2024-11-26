@@ -14,339 +14,343 @@
 </head>
 
 <body>
-    <div id="modal" class="modal">
-        <div class="modal-content">
-          <span id="closeModal" class="close">&times;</span>
-            <div class="section babysitter" onclick="navigateToPage('registration.html')">
-                <h1>Babysitter</h1>
-                <div class="content">
-                    <img src="./images/babysitter1.svg" alt="Babysitter">
+    <div class="wrapper">
+        <canvas id="bubble"></canvas>
+        <div id="modal" class="modal">
+            <div class="modal-content">
+              <span id="closeModal" class="close">&times;</span>
+                <div class="section babysitter" onclick="navigateToPage('registration.html')">
+                    <h1>Babysitter</h1>
+                    <div class="content">
+                        <img src="./images/babysitter1.svg" alt="Babysitter">
+                    </div>
+                </div>
+                <div class="section parent" onclick="navigateToPage('parent_registration.html')">
+                    <h1>Parent</h1>
+                    <div class="content">
+                        <img src="./images/parent1.svg" alt="Parent">
+                    </div>
                 </div>
             </div>
-            <div class="section parent" onclick="navigateToPage('parent_registration.html')">
-                <h1>Parent</h1>
-                <div class="content">
-                    <img src="./images/parent1.svg" alt="Parent">
+        </div>
+        <header class="header">
+            <div class="header-content" data-aos="zoom-in" data-aos-duration="1000" data-aos-easing="ease-in-sine">
+                <!-- Левая кнопка -->
+                <a href="#" class="nav-link button" id="openModal">Регистрация</a>
+    
+                <!-- Логотип -->
+                <div class="logo">
+                    <img src="images/logo.png" alt="Логотип Cleanera" class="logo-img">
                 </div>
+    
+                <!-- Правая кнопка -->
+                <a href="#contact" class="nav-link button">Связь</a>
             </div>
-        </div>
-    </div>
-    <header class="header">
-        <div class="header-content" data-aos="zoom-in" data-aos-duration="1000" data-aos-easing="ease-in-sine">
-            <!-- Левая кнопка -->
-            <a href="#" class="nav-link button" id="openModal">Регистрация</a>
-
-            <!-- Логотип -->
-            <div class="logo">
-                <img src="images/logo.png" alt="Логотип Cleanera" class="logo-img">
-            </div>
-
-            <!-- Правая кнопка -->
-            <a href="#contact" class="nav-link button">Связь</a>
-        </div>
-    </header>
-
-    <!-- Нижняя часть -->
-    <section class="lower-section">
-        <!-- Изображение слева от текста -->
-        <img src="images/13139_1-removebg-preview (1).png" alt="Cleaning illustration" class="lower-image-left lower-image-left-main" data-aos="fade-up">
-        <div class="lower-box" data-aos="fade-left" data-aos-duration="700" data-aos-delay="100">
-            <p>
-                Мы предлагаем профессиональные услуги уборки для дома и офиса, включая генеральную,
-                ежедневную уборку, мытьё окон и уборку после ремонта. Наша команда гарантирует чистоту,
-                порядок и использование экологичных средств. Доверьте нам заботу о вашем пространстве –
-                быстро, качественно и по доступной цене! Звоните: +7 (XXX) XXX-XX-XX.
-            </p>
-        </div>
-    </section>
-
-    <section class="lower-section lower-section-2">
-        <div class="lower-box" data-aos="fade-right" data-aos-duration="700">
-            <p>
-                Поиск няни, няни или сиделки — это решение, которое выбирают многие пары, но найти
-                рядом надёжного человека, способного позаботиться о младенце, непросто. Вот почему
-                мы решили создать первую социальную платформу www.bambinosit.com, которая позволяет
-                родителям связаться с няней. Даже няни будут в восторге!
-            </p>
-        </div>
-        <!-- Изображение на правой стороне -->
-        <img src="images/freepik__upload__74404-removebg-preview.png" alt="Babysitting illustration" class="lower-image" data-aos="fade-up">
-    </section>
-
-    <section class="baby-sitting-intro">
-        <h2 data-aos="zoom-in" data-aos-duration="500">Baby Sitting Service</h2>
-    </section>
-
-    <section class="baby-sitting-service">
-        <!-- Первая карточка: картинка слева -->
-        <div class="service-box-left" data-aos="flip-left" data-aos-duration="700">
-            <div class="service-info">
-                <h3>Для Няни</h3>
-                <p>
-                    Присоединяйтесь к нашей платформе и предлагайте свои услуги родителям, которые ищут надежных и
-                    опытных нянь.
-                    Мы обеспечиваем высокий уровень доверия и возможность работать в гибком графике.
-                </p>
-            </div>
-            <!-- Стрелка для перехода на другую страницу -->
-            <a href="#" class="arrow-link">
-                <div class="box">Начать тест
-                    <img src="images\arrow_circle_right_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png" height="30"
-                        width="30" />
-                </div>
-            </a>
-        </div>
-        <div class="service-image-left">
-            <img src="images/freepik__upload__81496-removebg-preview.png" alt="Nanny image" class="service-image" style="position: relative; z-index: 999;" data-aos="zoom-in-up">
-        </div>
-
-        <!-- Вторая карточка: картинка справа -->
-        <div class="service-box-right" data-aos="flip-right" data-aos-duration="700">
-            <div class="service-info">
-                <h3>Для Родителей</h3>
-                <p>
-                    На нашей платформе родители могут найти проверенных нянь для ухода за детьми. Мы предоставляем
-                    платформу,
-                    на которой можно связаться с надежными профессионалами.
-                </p>
-            </div>
-            <!-- Стрелка для перехода на другую страницу -->
-            <a href="#" class="arrow-link">
-                <div class="box">Начать контакт
-                    <img src="images\arrow_circle_right_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png" height="30"
-                        width="30" />
-                </div>
-            </a>
-        </div>
-        <div class="service-image-right">
-            <img src="images/freepik__upload__71294-removebg-preview.png" alt="Parent image" class="service-image" data-aos="zoom-in-up" style="width: 100%;">
-        </div>
-    </section>
-    <br>
-    <br>
-    <br>
-    <br>
-    <div class="all-sections">
+        </header>
+    
+        <!-- Нижняя часть -->
         <section class="lower-section">
             <!-- Изображение слева от текста -->
-            <div class="our-mission">
-                <img src="images\freepik__upload__85109.jpeg" alt="Cleaning illustration" class="lower-image-left lower-image-layout" data-aos="zoom-out-right" data-aos-duration="700">
-                <div class="mission-right-section" data-aos="fade-up"
-                data-aos-duration="700">
-                    <h2>Наша миссия</h2>
-                    <p class="our_mission">
-                        Мы предлагаем профессиональные услуги уборки для дома и офиса, включая генеральную,
-                        ежедневную уборку, мытьё окон и уборку после ремонта. Наша команда гарантирует чистоту,
-                        порядок и использование экологичных средств. Доверьте нам заботу о вашем пространстве –
-                        быстро, качественно и по доступной цене! Звоните: +7 (XXX) XXX-XX-XX.</h>
+            <img src="images/13139_1-removebg-preview (1).png" alt="Cleaning illustration" class="lower-image-left lower-image-left-main" data-aos="fade-up">
+            <div class="lower-box" data-aos="fade-left" data-aos-duration="700" data-aos-delay="100">
+                <p>
+                    Мы предлагаем профессиональные услуги уборки для дома и офиса, включая генеральную,
+                    ежедневную уборку, мытьё окон и уборку после ремонта. Наша команда гарантирует чистоту,
+                    порядок и использование экологичных средств. Доверьте нам заботу о вашем пространстве –
+                    быстро, качественно и по доступной цене! Звоните: +7 (XXX) XXX-XX-XX.
+                </p>
+            </div>
+        </section>
+    
+        <section class="lower-section lower-section-2">
+            <div class="lower-box" data-aos="fade-right" data-aos-duration="700">
+                <p>
+                    Поиск няни, няни или сиделки — это решение, которое выбирают многие пары, но найти
+                    рядом надёжного человека, способного позаботиться о младенце, непросто. Вот почему
+                    мы решили создать первую социальную платформу www.bambinosit.com, которая позволяет
+                    родителям связаться с няней. Даже няни будут в восторге!
+                </p>
+            </div>
+            <!-- Изображение на правой стороне -->
+            <img src="images/freepik__upload__74404-removebg-preview.png" alt="Babysitting illustration" class="lower-image" data-aos="fade-up">
+        </section>
+    
+        <section class="baby-sitting-intro">
+            <h2 data-aos="zoom-in" data-aos-duration="500">Baby Sitting Service</h2>
+        </section>
+    
+        <section class="baby-sitting-service">
+            <!-- Первая карточка: картинка слева -->
+            <div class="service-box-left" data-aos="flip-left" data-aos-duration="700">
+                <div class="service-info">
+                    <h3>Для Няни</h3>
+                    <p>
+                        Присоединяйтесь к нашей платформе и предлагайте свои услуги родителям, которые ищут надежных и
+                        опытных нянь.
+                        Мы обеспечиваем высокий уровень доверия и возможность работать в гибком графике.
                     </p>
                 </div>
+                <!-- Стрелка для перехода на другую страницу -->
+                <a href="#" class="arrow-link">
+                    <div class="box">Начать тест
+                        <img src="images\arrow_circle_right_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png" height="30"
+                            width="30" />
+                    </div>
+                </a>
+            </div>
+            <div class="service-image-left">
+                <img src="images/freepik__upload__81496-removebg-preview.png" alt="Nanny image" class="service-image" style="position: relative; z-index: 999;" data-aos="zoom-in-up">
+            </div>
+    
+            <!-- Вторая карточка: картинка справа -->
+            <div class="service-box-right" data-aos="flip-right" data-aos-duration="700">
+                <div class="service-info">
+                    <h3>Для Родителей</h3>
+                    <p>
+                        На нашей платформе родители могут найти проверенных нянь для ухода за детьми. Мы предоставляем
+                        платформу,
+                        на которой можно связаться с надежными профессионалами.
+                    </p>
+                </div>
+                <!-- Стрелка для перехода на другую страницу -->
+                <a href="#" class="arrow-link">
+                    <div class="box">Начать контакт
+                        <img src="images\arrow_circle_right_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png" height="30"
+                            width="30" />
+                    </div>
+                </a>
+            </div>
+            <div class="service-image-right">
+                <img src="images/freepik__upload__71294-removebg-preview.png" alt="Parent image" class="service-image" data-aos="zoom-in-up" style="width: 100%;">
             </div>
         </section>
-        <section>
-            <div class="our-objects">
-                <h2 data-aos="fade-down" data-aos-duration="700">Наши ценности</h2>
-                <div class="back-image">
-                    <div class="container-objects-box">
-                        <div class="object-card" data-aos="flip-left" data-aos-duration="700" data-aos-delay="200">
-                            <div class="object-title">
-                                <h3>Безопасность</h3>
-                                <span class="object-title-icon">
-                                    <img src="./images/object-title-icon.png" alt="">
-                                </span>
-                            </div>
-                            <div class="object-description">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus quia neque sunt animi libero eaque quod, mollitia distinctio, possimus reprehenderit velit qui, quidem earum eius eveniet. Perferendis deleniti delectus corporis autem suscipit quam, veritatis sequi? Tempore aut laboriosam, at optio, consequuntur maxime minus</p>
-                            </div>
-                        </div>
-        
-                        <div class="object-card" data-aos="flip-left" data-aos-duration="700" data-aos-delay="200">
-                            <div class="object-title">
-                                <h3>Безопасность</h3>
-                                <span class="object-title-icon">
-                                    <img src="./images/object-title-icon.png" alt="">
-                                </span>
-                            </div>
-                            <div class="object-description">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus quia neque sunt animi libero eaque quod, mollitia distinctio, possimus reprehenderit velit qui, quidem earum eius eveniet. Perferendis deleniti delectus corporis autem suscipit quam, veritatis sequi? Tempore aut laboriosam, at optio, consequuntur maxime minus</p>
-                            </div>
-                        </div>
-        
-                        <div class="object-card" data-aos="flip-left" data-aos-duration="700" data-aos-delay="200">
-                            <div class="object-title">
-                                <h3>Безопасность</h3>
-                                <span class="object-title-icon">
-                                    <img src="./images/object-title-icon.png" alt="">
-                                </span>
-                            </div>
-                            <div class="object-description">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus quia neque sunt animi libero eaque quod, mollitia distinctio, possimus reprehenderit velit qui, quidem earum eius eveniet. Perferendis deleniti delectus corporis autem suscipit quam, veritatis sequi?</p>
-                            </div>
-                        </div>
-
-                        <div class="object-card" data-aos="flip-left" data-aos-duration="700" data-aos-delay="200">
-                            <div class="object-title">
-                                <h3>Безопасность</h3>
-                                <span class="object-title-icon">
-                                    <img src="./images/object-title-icon.png" alt="">
-                                </span>
-                            </div>
-                            <div class="object-description">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus quia neque sunt animi libero eaque quod, mollitia distinctio, possimus reprehenderit velit qui, quidem earum eius eveniet. Perferendis deleniti delectus corporis autem suscipit quam, veritatis sequi?</p>
-                            </div>
-                        </div>
-
-                        <div class="object-card" data-aos="flip-left" data-aos-duration="700" data-aos-delay="200">
-                            <div class="object-title">
-                                <h3>Безопасность</h3>
-                                <span class="object-title-icon">
-                                    <img src="./images/object-title-icon.png" alt="">
-                                </span>
-                            </div>
-                            <div class="object-description">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus quia neque sunt animi libero eaque quod, mollitia distinctio, possimus reprehenderit velit qui, quidem earum eius eveniet. Perferendis deleniti delectus corporis autem suscipit quam, veritatis sequi?</p>
-                            </div>
-                        </div>
-
-                        <div class="object-card" data-aos="flip-left" data-aos-duration="700" data-aos-delay="200">
-                            <div class="object-title">
-                                <h3>Безопасность</h3>
-                                <span class="object-title-icon">
-                                    <img src="./images/object-title-icon.png" alt="">
-                                </span>
-                            </div>
-                            <div class="object-description">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus quia neque sunt animi libero eaque quod, mollitia distinctio, possimus reprehenderit velit qui, quidem earum eius eveniet. Perferendis deleniti delectus corporis autem suscipit quam, veritatis sequi?</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="cleaning-section" style="margin-top: 50px;">
-            <div class="cleaning-service-section">
-                <div class="cs-section-title">
-                    <h2 data-aos="zoom-in" data-aos-duration="1000">Cleaning Service</h2>
-                </div>
-                <div class="cs-section-content" data-aos="zoom-out" data-aos-duration="700" data-aos-delay="200">
-                    <div class="cs-content-pic">
-                        <img src="./images/cleaning-service-img.png" alt="">
-                    </div>
-                    <div class="cs-content-text">
-                        <p>Bambinosit стремится связать родителей с нянями, социальными и/или школьными помощниками, квалифицированными, компетентными и выбранными по нескольким критериям.
-                            С одной стороны, эта платформа позволит родителям найти желаемый профиль с ценностями, которые они ищут в человеке, который будет присматривать за их детьми или их бабушками и дедушками. С другой стороны, это позволит молодым студенткам или даже безработным женщинам найти адекватный и сертифицированный источник дохода.Bambinosit стремится связать родителей с нянями, социальными и/или школьными помощниками, квалифицированными, компетентными и выбранными по нескольким критериям.
-                            С одной стороны, эта платформа позволит родителям найти желаемый профиль с ценностями, которые они ищут в человеке, который будет присматривать за их детьми или их бабушками и дедушками. С другой стороны, это позволит молодым студенткам или даже безработным женщинам найти адекватный и сертифицированный источник дохода</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="faq-section">
-            <div class="faq-content">
-                <div class="faq-title">
-                    <h2>Хотите заказать?</h2>
-                </div>
-                <div class="faq-description">
-                    <div class="faq-text">
-                        <p>
-                            Вы няня? Вы прошли обучение в области раннего детства? Увлечены этой профессией? Вы любите детей? У нас есть широкий обзор различных вакансий по присмотру за детьми, а также вакансии, доступные по вашим критериям поиска.
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="all-sections">
+            <section class="lower-section">
+                <!-- Изображение слева от текста -->
+                <div class="our-mission">
+                    <img src="images\freepik__upload__85109.jpeg" alt="Cleaning illustration" class="lower-image-left lower-image-layout" data-aos="zoom-out-right" data-aos-duration="700">
+                    <div class="mission-right-section" data-aos="fade-up"
+                    data-aos-duration="700">
+                        <h2>Наша миссия</h2>
+                        <p class="our_mission">
+                            Мы предлагаем профессиональные услуги уборки для дома и офиса, включая генеральную,
+                            ежедневную уборку, мытьё окон и уборку после ремонта. Наша команда гарантирует чистоту,
+                            порядок и использование экологичных средств. Доверьте нам заботу о вашем пространстве –
+                            быстро, качественно и по доступной цене! Звоните: +7 (XXX) XXX-XX-XX.</h>
                         </p>
                     </div>
-                    <div class="faq-image" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="200">
-                        <img src="./images/faq-deal.png" alt="">
+                </div>
+            </section>
+            <section>
+                <div class="our-objects">
+                    <h2 data-aos="fade-down" data-aos-duration="700">Наши ценности</h2>
+                    <div class="back-image">
+                        <div class="container-objects-box">
+                            <div class="object-card" data-aos="flip-left" data-aos-duration="700" data-aos-delay="200">
+                                <div class="object-title">
+                                    <h3>Безопасность</h3>
+                                    <span class="object-title-icon">
+                                        <img src="./images/object-title-icon.png" alt="">
+                                    </span>
+                                </div>
+                                <div class="object-description">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus quia neque sunt animi libero eaque quod, mollitia distinctio, possimus reprehenderit velit qui, quidem earum eius eveniet. Perferendis deleniti delectus corporis autem suscipit quam, veritatis sequi? Tempore aut laboriosam, at optio, consequuntur maxime minus</p>
+                                </div>
+                            </div>
+            
+                            <div class="object-card" data-aos="flip-left" data-aos-duration="700" data-aos-delay="200">
+                                <div class="object-title">
+                                    <h3>Безопасность</h3>
+                                    <span class="object-title-icon">
+                                        <img src="./images/object-title-icon.png" alt="">
+                                    </span>
+                                </div>
+                                <div class="object-description">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus quia neque sunt animi libero eaque quod, mollitia distinctio, possimus reprehenderit velit qui, quidem earum eius eveniet. Perferendis deleniti delectus corporis autem suscipit quam, veritatis sequi? Tempore aut laboriosam, at optio, consequuntur maxime minus</p>
+                                </div>
+                            </div>
+            
+                            <div class="object-card" data-aos="flip-left" data-aos-duration="700" data-aos-delay="200">
+                                <div class="object-title">
+                                    <h3>Безопасность</h3>
+                                    <span class="object-title-icon">
+                                        <img src="./images/object-title-icon.png" alt="">
+                                    </span>
+                                </div>
+                                <div class="object-description">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus quia neque sunt animi libero eaque quod, mollitia distinctio, possimus reprehenderit velit qui, quidem earum eius eveniet. Perferendis deleniti delectus corporis autem suscipit quam, veritatis sequi?</p>
+                                </div>
+                            </div>
+    
+                            <div class="object-card" data-aos="flip-left" data-aos-duration="700" data-aos-delay="200">
+                                <div class="object-title">
+                                    <h3>Безопасность</h3>
+                                    <span class="object-title-icon">
+                                        <img src="./images/object-title-icon.png" alt="">
+                                    </span>
+                                </div>
+                                <div class="object-description">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus quia neque sunt animi libero eaque quod, mollitia distinctio, possimus reprehenderit velit qui, quidem earum eius eveniet. Perferendis deleniti delectus corporis autem suscipit quam, veritatis sequi?</p>
+                                </div>
+                            </div>
+    
+                            <div class="object-card" data-aos="flip-left" data-aos-duration="700" data-aos-delay="200">
+                                <div class="object-title">
+                                    <h3>Безопасность</h3>
+                                    <span class="object-title-icon">
+                                        <img src="./images/object-title-icon.png" alt="">
+                                    </span>
+                                </div>
+                                <div class="object-description">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus quia neque sunt animi libero eaque quod, mollitia distinctio, possimus reprehenderit velit qui, quidem earum eius eveniet. Perferendis deleniti delectus corporis autem suscipit quam, veritatis sequi?</p>
+                                </div>
+                            </div>
+    
+                            <div class="object-card" data-aos="flip-left" data-aos-duration="700" data-aos-delay="200">
+                                <div class="object-title">
+                                    <h3>Безопасность</h3>
+                                    <span class="object-title-icon">
+                                        <img src="./images/object-title-icon.png" alt="">
+                                    </span>
+                                </div>
+                                <div class="object-description">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus quia neque sunt animi libero eaque quod, mollitia distinctio, possimus reprehenderit velit qui, quidem earum eius eveniet. Perferendis deleniti delectus corporis autem suscipit quam, veritatis sequi?</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="faq-button" data-aos="zoom-in" data-aos-duration="500" data-aos-delay="100">
-                    <a href="">Заказать
-                        <span class="faq-icon">
-                            <img src="./images/arrow_circle_right_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png" alt="">
-                        </span>
-                    </a>
-                </div>
-            </div>
-        </section>
-        <section class="faq-section">
-            <div class="faq-content">
-                <div class="faq-title">
-                    <h2>Хотите стать частью нашей команды?</h2>
-                </div>
-                <div class="faq-description">
-                    <div class="faq-text faq-text-2">
-                        <p>
-                            Вы няня? Вы прошли обучение в области раннего детства? Увлечены этой профессией? Вы любите детей? У нас есть широкий обзор различных вакансий по присмотру за детьми, а также вакансии, доступные по вашим критериям поиска.                             Вы няня? Вы прошли обучение в области раннего детства? Увлечены этой профессией? Вы любите детей? У нас есть широкий обзор различных вакансий по присмотру за детьми, а также вакансии, доступные по вашим критериям поиска.
-                        </p>
+            </section>
+            <section class="cleaning-section" style="margin-top: 50px;">
+                <div class="cleaning-service-section">
+                    <div class="cs-section-title">
+                        <h2 data-aos="zoom-in" data-aos-duration="1000">Cleaning Service</h2>
                     </div>
-                    <div class="faq-image-2" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="200">
-                        <img src="./images/faq-team-meating.png" alt="">
+                    <div class="cs-section-content" data-aos="zoom-out" data-aos-duration="700" data-aos-delay="200">
+                        <div class="cs-content-pic">
+                            <img src="./images/cleaning-service-img.png" alt="">
+                        </div>
+                        <div class="cs-content-text">
+                            <p>Bambinosit стремится связать родителей с нянями, социальными и/или школьными помощниками, квалифицированными, компетентными и выбранными по нескольким критериям.
+                                С одной стороны, эта платформа позволит родителям найти желаемый профиль с ценностями, которые они ищут в человеке, который будет присматривать за их детьми или их бабушками и дедушками. С другой стороны, это позволит молодым студенткам или даже безработным женщинам найти адекватный и сертифицированный источник дохода.Bambinosit стремится связать родителей с нянями, социальными и/или школьными помощниками, квалифицированными, компетентными и выбранными по нескольким критериям.
+                                С одной стороны, эта платформа позволит родителям найти желаемый профиль с ценностями, которые они ищут в человеке, который будет присматривать за их детьми или их бабушками и дедушками. С другой стороны, это позволит молодым студенткам или даже безработным женщинам найти адекватный и сертифицированный источник дохода</p>
+                        </div>
                     </div>
                 </div>
-                <div class="faq-button" data-aos="zoom-in" data-aos-duration="500" data-aos-delay="100">
-                    <a href="">Присоединиться
-                        <span class="faq-icon">
-                            <img src="./images/arrow_circle_right_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png" alt="">
-                        </span>
-                    </a>
+            </section>
+            <section class="faq-section">
+                <div class="faq-content">
+                    <div class="faq-title">
+                        <h2>Хотите заказать?</h2>
+                    </div>
+                    <div class="faq-description">
+                        <div class="faq-text">
+                            <p>
+                                Вы няня? Вы прошли обучение в области раннего детства? Увлечены этой профессией? Вы любите детей? У нас есть широкий обзор различных вакансий по присмотру за детьми, а также вакансии, доступные по вашим критериям поиска.
+                            </p>
+                        </div>
+                        <div class="faq-image" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="200">
+                            <img src="./images/faq-deal.png" alt="">
+                        </div>
+                    </div>
+                    <div class="faq-button" data-aos="zoom-in" data-aos-duration="500" data-aos-delay="100">
+                        <a href="">Заказать
+                            <span class="faq-icon">
+                                <img src="./images/arrow_circle_right_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png" alt="">
+                            </span>
+                        </a>
+                    </div>
                 </div>
-            </div>
-        </section>
-
-        <section class="contact-section" id="contact">
-            <div class="container">
-                <form>
-                    <h2>Запрос на уборку дома</h2>
-                    <div class="form-group">
-                        <label for="name">Ваше имя:</label>
-                        <input type="text" id="name" placeholder="Введите ваше имя" required>
+            </section>
+            <section class="faq-section">
+                <div class="faq-content">
+                    <div class="faq-title">
+                        <h2>Хотите стать частью нашей команды?</h2>
                     </div>
-                    <div class="form-group">
-                        <label for="phone">Телефон:</label>
-                        <input type="tel" id="phone" placeholder="Введите номер телефона" required>
+                    <div class="faq-description">
+                        <div class="faq-text faq-text-2">
+                            <p>
+                                Вы няня? Вы прошли обучение в области раннего детства? Увлечены этой профессией? Вы любите детей? У нас есть широкий обзор различных вакансий по присмотру за детьми, а также вакансии, доступные по вашим критериям поиска.                             Вы няня? Вы прошли обучение в области раннего детства? Увлечены этой профессией? Вы любите детей? У нас есть широкий обзор различных вакансий по присмотру за детьми, а также вакансии, доступные по вашим критериям поиска.
+                            </p>
+                        </div>
+                        <div class="faq-image-2" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="200">
+                            <img src="./images/faq-team-meating.png" alt="">
+                        </div>
                     </div>
-                    <div class="form-group">
-                        <label for="email">Email:</label>
-                        <input type="email" id="email" placeholder="Введите email" required>
+                    <div class="faq-button" data-aos="zoom-in" data-aos-duration="500" data-aos-delay="100">
+                        <a href="">Присоединиться
+                            <span class="faq-icon">
+                                <img src="./images/arrow_circle_right_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png" alt="">
+                            </span>
+                        </a>
                     </div>
-                    <div class="form-group">
-                        <label for="rooms">Количество комнат:</label>
-                        <select id="rooms" required>
-                            <option value="">Выберите количество комнат</option>
-                            <option value="1">1 комната</option>
-                            <option value="2">2 комнаты</option>
-                            <option value="3">3 комнаты</option>
-                            <option value="4">4 комнаты</option>
-                            <option value="5+">5 и более</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label for="services">Дополнительные услуги:</label>
-                        <textarea id="services" placeholder="Например, чистка ковров, мытьё окон"></textarea>
-                    </div>
-                    <div class="form-group">
-                        <label for="date">Дата уборки:</label>
-                        <input type="date" id="date" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="time">Время уборки:</label>
-                        <input type="time" id="time" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="address">Адрес:</label>
-                        <input type="text" id="address" placeholder="Введите адрес" required>
-                    </div>
-                    <button type="submit" class="submit-button">Отправить запрос</button>
-                </form>
-            </div>
-        </section>
-        <section class="footer-section">
-
-        </section>
+                </div>
+            </section>
+    
+            <section class="contact-section" id="contact">
+                <div class="container">
+                    <form>
+                        <h2>Запрос на уборку дома</h2>
+                        <div class="form-group">
+                            <label for="name">Ваше имя:</label>
+                            <input type="text" id="name" placeholder="Введите ваше имя" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Телефон:</label>
+                            <input type="tel" id="phone" placeholder="Введите номер телефона" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" placeholder="Введите email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="rooms">Количество комнат:</label>
+                            <select id="rooms" required>
+                                <option value="">Выберите количество комнат</option>
+                                <option value="1">1 комната</option>
+                                <option value="2">2 комнаты</option>
+                                <option value="3">3 комнаты</option>
+                                <option value="4">4 комнаты</option>
+                                <option value="5+">5 и более</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="services">Дополнительные услуги:</label>
+                            <textarea id="services" placeholder="Например, чистка ковров, мытьё окон"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="date">Дата уборки:</label>
+                            <input type="date" id="date" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="time">Время уборки:</label>
+                            <input type="time" id="time" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="address">Адрес:</label>
+                            <input type="text" id="address" placeholder="Введите адрес" required>
+                        </div>
+                        <button type="submit" class="submit-button">Отправить запрос</button>
+                    </form>
+                </div>
+            </section>
+            <section class="footer-section">
+    
+            </section>
+        </div>
+    
+    
+    
     </div>
-
-
-
 </body>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
     AOS.init();
 </script>
 <script src="index.js"></script>
+<script src="bubble.js"></script>
 </html>
