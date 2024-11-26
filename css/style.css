@@ -191,10 +191,10 @@ body {
 
 .service-image-right {
     position: absolute;
-    right: -23%;
+    right: 6%;
     bottom: 0;
     z-index: 10;
-    width: 50%;
+    width: 250px;
 }
 
 /* Стрелка для карточек */
