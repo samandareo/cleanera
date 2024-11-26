@@ -8,15 +8,33 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/layout.css">
     <link rel="stylesheet" href="./css/contact.css">
+    <link rel="stylesheet" href="./css/modal.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
+    <div id="modal" class="modal">
+        <div class="modal-content">
+          <span id="closeModal" class="close">&times;</span>
+            <div class="section babysitter" onclick="navigateToPage('registration.html')">
+                <h1>Babysitter</h1>
+                <div class="content">
+                    <img src="./images/babysitter1.svg" alt="Babysitter">
+                </div>
+            </div>
+            <div class="section parent" onclick="navigateToPage('parent_registration.html')">
+                <h1>Parent</h1>
+                <div class="content">
+                    <img src="./images/parent1.svg" alt="Parent">
+                </div>
+            </div>
+        </div>
+    </div>
     <header class="header">
         <div class="header-content" data-aos="zoom-in" data-aos-duration="1000" data-aos-easing="ease-in-sine">
             <!-- Левая кнопка -->
-            <a href="#" class="nav-link button">Регистрация</a>
+            <a href="#" class="nav-link button" id="openModal">Регистрация</a>
 
             <!-- Логотип -->
             <div class="logo">
@@ -329,5 +347,6 @@
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
     AOS.init();
-  </script>
+</script>
+<script src="index.js"></script>
 </html>

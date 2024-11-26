@@ -1,0 +1,59 @@
+  
+  /* Modal styles */
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.6);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .modal-content {
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.6);
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  /* Close button styles */
+  .close {
+    position: absolute;
+    top: 0px;
+    right: 40px;
+    font-size: 5rem;
+    cursor: pointer;
+    color: #9A23C5;
+  }
+  .close:hover {
+    color: red;
+  }
+
+.section {
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.section h1 {
+    font-size: 2.5rem;
+
+    font-weight: bold;
+    text-align: start;
+
+    color: #9A23C5;
+}
+.section:hover {
+    background-color: #9a23c57c;
+    cursor: pointer;
+}
+
+.section:hover h1 {
+    color: white;
+}

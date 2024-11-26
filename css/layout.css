@@ -203,6 +203,20 @@
         padding: 50px!important;
         width: 400px!important;
     }
+
+    .section h1 {
+        font-size: 1.2rem!important;
+    
+        font-weight: medium;
+        text-align: start;
+    
+        color: #9A23C5;
+    }
+
+    .close {
+        font-size: 1.5rem!important;
+    }
+
 }
 
 @media (min-width:501px) and (max-width:700px) {
@@ -378,6 +392,19 @@
         left: -75px;
         bottom: -25px;
     }
+
+    .section h1 {
+        font-size: 1.2rem!important;
+    
+        font-weight: medium;
+        text-align: start;
+    
+        color: #9A23C5;
+    }
+
+    .close {
+        font-size: 1.5rem!important;
+    }
 }
 
 @media (min-width : 701px) and (max-width:900px) {
@@ -503,6 +530,19 @@
 
     .faq-image-2 {
         left: -115px;
+    }
+
+    .section h1 {
+        font-size: 1.8rem!important;
+    
+        font-weight: medium;
+        text-align: start;
+    
+        color: #9A23C5;
+    }
+
+    .close {
+        font-size: 3rem!important;
     }
 }
 
