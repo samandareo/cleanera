@@ -13,6 +13,7 @@
             height: 100vh;
             margin: 0;
             background-color: #f0f0f0;
+            padding: 50px;
         }
         .message-container {
             text-align: center;
@@ -22,8 +23,14 @@
             box-shadow: 0 0 15px #9a23c58c;
         }
         .logo {
-            max-width: 200px;
+            max-width: 250px;
+            height: auto;
+            margin-top: 20px;
             margin-bottom: 20px;
+        }
+
+        .logo img {
+            width: 100%;
         }
         .message-container h1 {
             color: #2c3e50;
@@ -38,16 +45,15 @@
 
     <div class="message-container">
         <!-- Logo -->
-        <img src="./images/logo.png" alt="Your Logo" class="logo"> <!-- Replace with your logo URL -->
+        <img src="./images/logo.svg" alt="Your Logo" class="logo"> <!-- Replace with your logo URL -->
         
         <h1>Ваша заявка отправлена!</h1>
         <p>Спасибо за вашу заявку. Мы скоро свяжемся с вами.</p>
     </div>
 
     <script>
-        // Redirect to the homepage after 3 seconds
         setTimeout(function() {
-            window.location.href = "/"; // Replace with your homepage URL if needed
+            window.location.href = "/";
         }, 3000);
     </script>
 

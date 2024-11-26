@@ -6,6 +6,7 @@ document.getElementById("nannyForm").addEventListener("submit", function(event) 
     const formData = {
         parentName: document.getElementById("parentName").value,
         phone: document.getElementById("phone").value,
+        email: document.getElementById("email").value,
         childName: document.getElementById("childName").value,
         childAge: document.getElementById("childAge").value,
         startDate: document.getElementById("startDate").value,
@@ -21,6 +22,7 @@ document.getElementById("nannyForm").addEventListener("submit", function(event) 
 
 Имя родителя: ${formData.parentName}
 Телефон: ${formData.phone}
+Email: ${formData.email}
 Имя ребёнка: ${formData.childName}
 Возраст ребёнка: ${formData.childAge}
 Дата начала: ${formData.startDate}
