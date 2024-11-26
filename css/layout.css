@@ -182,12 +182,12 @@
     .faq-image {
         right: -11px;
         bottom: -36px;
-        opacity: 0.2;
+        opacity: 0.2!important;
     }
     .faq-image-2 {
         left: 0;
         bottom: 5px;
-        opacity: 0.2;
+        opacity: 0.2!important;
     }
 
     .faq-button > a {
