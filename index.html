@@ -91,7 +91,7 @@
                     </p>
                 </div>
                 <!-- Стрелка для перехода на другую страницу -->
-                <a href="#" class="arrow-link">
+                <a onclick="navigateToPage('registration.html')" class="arrow-link">
                     <div class="box">Начать тест
                         <img src="images\arrow_circle_right_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png" height="30"
                             width="30" />
@@ -113,7 +113,7 @@
                     </p>
                 </div>
                 <!-- Стрелка для перехода на другую страницу -->
-                <a href="#" class="arrow-link">
+                <a onclick="navigateToPage('parent_registration.html')" class="arrow-link">
                     <div class="box">Начать контакт
                         <img src="images\arrow_circle_right_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png" height="30"
                             width="30" />
@@ -258,7 +258,7 @@
                         </div>
                     </div>
                     <div class="faq-button" data-aos="zoom-in" data-aos-duration="500" data-aos-delay="100">
-                        <a href="">Заказать
+                        <a onclick="navigateToPage('parent_registration.html')">Заказать
                             <span class="faq-icon">
                                 <img src="./images/arrow_circle_right_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png" alt="">
                             </span>
@@ -282,7 +282,7 @@
                         </div>
                     </div>
                     <div class="faq-button" data-aos="zoom-in" data-aos-duration="500" data-aos-delay="100">
-                        <a href="">Присоединиться
+                        <a onclick="navigateToPage('registration.html')">Присоединиться
                             <span class="faq-icon">
                                 <img src="./images/arrow_circle_right_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png" alt="">
                             </span>
@@ -293,7 +293,7 @@
     
             <section class="contact-section" id="contact">
                 <div class="container">
-                    <form>
+                    <form id="cleaning-request-form">
                         <h2>Запрос на уборку дома</h2>
                         <div class="form-group">
                             <label for="name">Ваше имя:</label>
@@ -348,9 +348,13 @@
     </div>
 </body>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+
 <script>
     AOS.init();
+    
 </script>
 <script src="index.js"></script>
 <script src="bubble.js"></script>
+<script src="emailSender.js"></script>
 </html>

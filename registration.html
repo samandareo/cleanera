@@ -115,7 +115,7 @@
         </div>
         <div class="container">
             <div class="title">Форма регистрации</div>
-            <form>
+            <form id="registrationForm">
                 <div class="gender">
                     <button type="button" class="gender-button" data-value="Мужчина">Мужчина</button>
                     <button type="button" class="gender-button" data-value="Женщина">Женщина</button>
@@ -149,6 +149,7 @@
     </div>
 
     <script>
+
         const genderButtons = document.querySelectorAll('.gender-button');
         const genderInput = document.getElementById('gender');
 
@@ -164,5 +165,16 @@
         });
     </script>
 </body>
+<script type="text/javascript">
+    (function(){
+       emailjs.init({
+         publicKey: "1QP0UJhcm0mJGtnRR",
+       });
+    })();
+ </script>
+<script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
 <script src="bubble.js"></script>
+<script src="emailjsSenderNyanya.js"></script>
 </html>

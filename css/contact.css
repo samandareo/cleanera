@@ -1,4 +1,4 @@
-.logo {
+.logo-contact {
     position: absolute;
     top: -80px; /* Расположение логотипа относительно верхней части страницы */
     left: 50%;
@@ -6,7 +6,7 @@
     text-align: center;
 }
 
-.logo img {
+.logo-contact img {
     max-width: 250px; /* Устанавливаем максимальную ширину логотипа */
     height: auto; /* Сохраняем пропорции изображения */
 }
