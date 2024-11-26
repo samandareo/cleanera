@@ -12,20 +12,20 @@ canvas {
 .contact-section {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    gap: 20px;
     align-items: center;
+    
+    margin-top: 20px;
+    gap: 10px;
     width: 100vw;
-    height: 100vh;
+    height: auto;
     background-color: rgba(255, 255, 255, 0.5);
 }
 
 .logo-contact {
-    position: absolute;
-    top: -1%; /* Расположение логотипа относительно верхней части страницы */
-    left: 50%;
-    transform: translateX(-50%); /* Центрирование логотипа по горизонтали */
-    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: auto;
 
     width: 300px;
 }
@@ -41,8 +41,8 @@ canvas {
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     width: 500px; /* Уменьшенная ширина контейнера */
-    margin-top: 100px;
     text-align: left;/* Отступ сверху, чтобы контейнер не перекрывал логотип */
+    margin-bottom: 50px;
 }
 
 h2 {
