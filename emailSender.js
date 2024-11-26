@@ -17,10 +17,46 @@ document.getElementById("cleaning-request-form").addEventListener("submit", func
         address: document.getElementById("address").value,
     };
 
+    const message = `
+    Новый запрос на уборку🧹:
+
+Имя клиента: ${formData.name}
+Телефон: ${formData.phone}
+Email: ${formData.email}
+Количество комнат: ${formData.rooms}
+
+Дополнительные услуги: ${formData.services}
+
+Дата уборки: ${formData.date}
+Время уборки: ${formData.time}
+Адрес: ${formData.address}
+`;
+
+    const botToken = '7580434956:AAE68J5NF1vupXhvIHojSAsnXXEr76p1XMo'; // Replace with your Telegram Bot token
+    const chatId = '-1002295559153'; // Replace with your Telegram channel's chat ID
+
+    fetch(`https://api.telegram.org/bot${botToken}/sendMessage`, {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+            chat_id: chatId,
+            text: message
+        })
+    })
+    .then(response => response.json())
+    .then(data => {
+        console.log("Message sent to Telegram:", data);
+    })
+    .catch(error => {
+        console.error("Error sending message to Telegram:", error);
+    });
+
     // Send email to admin
     emailjs.send("service_x6wpo8q", "template_rp96hia", formData)
     .then(function(response) {
-        alert("Ваш запрос отправлен успешно!");
+        window.location.href = "confirmation.html";
 
         // Optionally, send confirmation email to the user
         emailjs.send("service_x6wpo8q", "template_8frsyau", {

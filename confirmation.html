@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Заявка отправлена</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        .message-container {
+            text-align: center;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 15px #9a23c58c;
+        }
+        .logo {
+            max-width: 200px;
+            margin-bottom: 20px;
+        }
+        .message-container h1 {
+            color: #2c3e50;
+        }
+        .message-container p {
+            color: #7f8c8d;
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="message-container">
+        <!-- Logo -->
+        <img src="./images/logo.png" alt="Your Logo" class="logo"> <!-- Replace with your logo URL -->
+        
+        <h1>Ваша заявка отправлена!</h1>
+        <p>Спасибо за вашу заявку. Мы скоро свяжемся с вами.</p>
+    </div>
+
+    <script>
+        // Redirect to the homepage after 3 seconds
+        setTimeout(function() {
+            window.location.href = "/"; // Replace with your homepage URL if needed
+        }, 3000);
+    </script>
+
+</body>
+</html>
