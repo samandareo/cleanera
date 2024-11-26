@@ -217,6 +217,39 @@
         font-size: 1.5rem!important;
     }
 
+    .footer-logo {
+        width: 125px;
+        height: auto;
+    }
+    
+    .footer-logo img {
+        width: 100%;
+    }
+
+    .footer-content {
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+    .footer-contact-information ul > li {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        align-items: center;
+    
+        font-size: small;
+    }
+    
+    .footer-contact-information ul > li > i {
+        font-size: 14px;
+    }
+    
+    .footer-company-info {
+        gap: 15px;
+        width: 100%;
+        text-align: justify;
+        align-items: center;
+    }
+
 }
 
 @media (min-width:501px) and (max-width:700px) {
@@ -405,6 +438,39 @@
     .close {
         font-size: 1.5rem!important;
     }
+
+    .footer-logo {
+        width: 150px;
+        height: auto;
+    }
+    
+    .footer-logo img {
+        width: 100%;
+    }
+
+    .footer-content {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    .footer-contact-information ul > li {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        align-items: center;
+    
+        font-size: medium;
+    }
+    
+    .footer-contact-information ul > li > i {
+        font-size: 18px;
+    }
+    
+    .footer-company-info {
+        gap: 15px;
+        width: 100%;
+        text-align: justify;
+        align-items: center;
+    }
 }
 
 @media (min-width : 701px) and (max-width:900px) {
@@ -543,6 +609,33 @@
 
     .close {
         font-size: 3rem!important;
+    }
+
+    .footer-logo {
+        width: 200px;
+        height: auto;
+    }
+    
+    .footer-logo img {
+        width: 100%;
+    }
+
+    .footer-contact-information ul > li {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        align-items: center;
+    
+        font-size: medium;
+    }
+    
+    .footer-contact-information ul > li > i {
+        font-size: 18px;
+    }
+    
+    .footer-company-info {
+        gap: 15px;
+        width: 30%;
     }
 }
 
