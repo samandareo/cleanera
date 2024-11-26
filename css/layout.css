@@ -230,6 +230,7 @@
         flex-wrap: wrap;
         gap: 30px;
     }
+    
     .footer-contact-information ul > li {
         display: flex;
         flex-direction: row;
