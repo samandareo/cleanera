@@ -9,17 +9,22 @@
             font-family: Arial, sans-serif;
             background-color: #f8f8f84f;
             margin: 0;
-            padding: 20px;
+            padding: 40px 20px;
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 90vh;
+            gap: 30px;
+
             flex-direction: column;
-            position: relative;
         }
+
+        .logo {
+            width: 250px;
+            height: auto;
+        }
+
         .logo img {
-            max-width: 250px;
-            margin-bottom: -60px;
+            width: 100%;
         }
         .container {
             display: flex;
@@ -68,12 +73,12 @@
         .form-group button:hover {
             background-color: #8d2cf5;
         }
-        .gender {
+        .gender-div {
             display: flex;
             justify-content: space-between;
             margin-bottom: 15px;
         }
-        .gender button {
+        .gender-div button {
             flex: 1;
             margin: 0 5px;
             padding: 10px;
@@ -84,7 +89,7 @@
             cursor: pointer;
             transition: background 0.3s, color 0.3s;
         }
-        .gender button.active {
+        .gender-div button.active {
             background: #af3ff4;
             color: white;
         }
@@ -100,10 +105,6 @@
             .container {
                 width: 90%;
             }
-
-            .form-wrapper {
-                padding: 5px;
-            }
         }
     </style>
 </head>
@@ -111,15 +112,18 @@
     <div class="form-wrapper">
         <canvas id="bubble"></canvas>
         <div class="logo">
-            <img src="./images/logo.png" alt="Лого">
+            <img src="./images/logo.svg" alt="Лого">
         </div>
         <div class="container">
             <div class="title">Форма регистрации</div>
             <form id="registrationForm">
                 <div class="gender">
-                    <button type="button" class="gender-button" data-value="Мужчина">Мужчина</button>
-                    <button type="button" class="gender-button" data-value="Женщина">Женщина</button>
-                    <input type="hidden" id="gender" name="gender" required>
+                    <div class="gender-div">
+                        <button type="button" class="gender-button" data-value="Мужчина" id="male-button">Мужчина</button>
+                        <button type="button" class="gender-button" data-value="Женщина" id="female-button">Женщина</button>
+                        <input type="hidden" id="gender" name="gender" required>
+                    </div>
+                    <span style="display: none;">Вам нужно выбрать один из них!</span>
                 </div>
                 <div class="form-group">
                     <label for="name">Имя и Фамилия: </label>
@@ -151,7 +155,7 @@
     <script>
 
         const genderButtons = document.querySelectorAll('.gender-button');
-        const genderInput = document.getElementById('gender');
+        const genderInput = document.getElementById('gender-div');
 
         genderButtons.forEach(button => {
             button.addEventListener('click', () => {
@@ -163,6 +167,7 @@
                 genderInput.value = button.dataset.value;
             });
         });
+
     </script>
 </body>
 <script type="text/javascript">

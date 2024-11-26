@@ -4,27 +4,26 @@
     });
  })();
 
+const maleButton = document.getElementById('male-button');
+const femaleButton = document.getElementById('female-button');
+
+maleButton.addEventListener('click', () => {
+    console.log('Male button is clicked');
+    handleButtonClick('Мужчина');
+});
+
+femaleButton.addEventListener('click', () => {
+    console.log('Female button is clicked');
+    handleButtonClick('Женщина');
+});
+
+var selectedGender = '';
+function handleButtonClick(buttonName) {
+    selectedGender = buttonName
+}
+
 document.getElementById("registrationForm").addEventListener("submit", function(event) {
     event.preventDefault(); // Prevents default form submission
-
-    // Get the gender value
-    let selectedGender = '';
-
-    // Add event listeners to gender buttons
-    const genderButtons = document.querySelectorAll('.gender-button');
-    genderButtons.forEach(button => {
-        button.addEventListener('click', function() {
-            // Set selected gender to the clicked button's data-value
-            selectedGender = this.getAttribute('data-value');
-            
-            // Set the value of the hidden input
-            document.getElementById('gender').value = selectedGender;
-
-            // Optionally, you can highlight the selected button by adding a class
-            genderButtons.forEach(btn => btn.classList.remove('selected'));
-            this.classList.add('selected');
-        });
-    });
 
     // Get form values
     const formData = {
@@ -39,6 +38,7 @@ document.getElementById("registrationForm").addEventListener("submit", function(
     // Telegram bot
         const message = `
         Новый запрос на няня👩🏼‍🍼:
+
 Пол: ${selectedGender}
 Имя и Фамилия: ${formData.name}
 Дата рождения: ${formData.dob}
