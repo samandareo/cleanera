@@ -1,0 +1,75 @@
+.logo {
+    position: absolute;
+    top: -80px; /* Расположение логотипа относительно верхней части страницы */
+    left: 50%;
+    transform: translateX(-50%); /* Центрирование логотипа по горизонтали */
+    text-align: center;
+}
+
+.logo img {
+    max-width: 250px; /* Устанавливаем максимальную ширину логотипа */
+    height: auto; /* Сохраняем пропорции изображения */
+}
+
+.container {
+    background-color: white;
+    padding: 35px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 500px; /* Уменьшенная ширина контейнера */
+    text-align: left;
+    margin-top: 100px; /* Отступ сверху, чтобы контейнер не перекрывал логотип */
+}
+
+h2 {
+    text-align: center; /* Центрируем заголовок */
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.form-group label {
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    color: #555;
+    width: 150px; /* Задаем ширину для лейблов */
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: calc(100% - 160px); /* Уменьшаем ширину, чтобы оставить место для метки */
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.form-group textarea {
+    resize: none;
+    height: 100px;
+}
+
+.submit-button {
+    width: 100%;
+    background-color: #af3ff4;
+    color: white;
+    border: none;
+    padding: 15px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.submit-button:hover {
+    background-color: #8d2cf5;
+}

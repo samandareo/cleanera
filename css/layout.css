@@ -198,6 +198,10 @@
         width: 20px;
         height: 20px;
     }
+
+    .container {
+        padding: 50px!important;
+    }
 }
 
 @media (min-width:501px) and (max-width:700px) {

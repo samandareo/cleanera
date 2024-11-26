@@ -3,10 +3,11 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Cleanera</title>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/layout.css">
+    <link rel="stylesheet" href="./css/contact.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
@@ -23,7 +24,7 @@
             </div>
 
             <!-- Правая кнопка -->
-            <a href="#" class="nav-link button">Связь</a>
+            <a href="#contact" class="nav-link button">Связь</a>
         </div>
     </header>
 
@@ -272,6 +273,53 @@
             </div>
         </section>
 
+        <section class="contact-section" id="contact">
+            <div class="container">
+                <form>
+                    <h2>Запрос на уборку дома</h2>
+                    <div class="form-group">
+                        <label for="name">Ваше имя:</label>
+                        <input type="text" id="name" placeholder="Введите ваше имя" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Телефон:</label>
+                        <input type="tel" id="phone" placeholder="Введите номер телефона" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" placeholder="Введите email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="rooms">Количество комнат:</label>
+                        <select id="rooms" required>
+                            <option value="">Выберите количество комнат</option>
+                            <option value="1">1 комната</option>
+                            <option value="2">2 комнаты</option>
+                            <option value="3">3 комнаты</option>
+                            <option value="4">4 комнаты</option>
+                            <option value="5+">5 и более</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="services">Дополнительные услуги:</label>
+                        <textarea id="services" placeholder="Например, чистка ковров, мытьё окон"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="date">Дата уборки:</label>
+                        <input type="date" id="date" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="time">Время уборки:</label>
+                        <input type="time" id="time" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="address">Адрес:</label>
+                        <input type="text" id="address" placeholder="Введите адрес" required>
+                    </div>
+                    <button type="submit" class="submit-button">Отправить запрос</button>
+                </form>
+            </div>
+        </section>
         <section class="footer-section">
 
         </section>

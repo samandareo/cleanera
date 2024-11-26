@@ -5,6 +5,7 @@
     box-sizing: border-box;
     /* border: 1px red solid; */
     font-family: serif;
+    scroll-behavior: smooth;
 }
 
 body {
