@@ -14,11 +14,12 @@
             font-family: Arial, sans-serif;
             background-color: #f8f8f87a;
             margin: 0;
-            padding: 0;
+            padding: 50px 0;
             display: flex;
             justify-content: center;
             align-items: center;
             flex-direction: column;
+            gap: 30px;
             min-height: 100vh;
             position: relative;
         }
@@ -26,13 +27,11 @@
         .logo {
             text-align: center;
             width: 250px;
-            position: absolute;
-            top: 0;
+            height: auto;
         }
 
         .logo img {
             width: 100%;/* Максимальная ширина логотипа */
-            height: auto;
         }
 
         .container {
@@ -41,8 +40,7 @@
             border-radius: 10px;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
             width: 500px; /* Уменьшенная ширина контейнера */
-            text-align: center;
-            margin-top: 170px; /* Отступ сверху, чтобы не перекрывать логотип */
+            text-align: center; /* Отступ сверху, чтобы не перекрывать логотип */
         }
 
         .form-group {
@@ -103,9 +101,6 @@
                 width: 80%;
             }
 
-            .form-wrapper {
-                padding: 5px;
-            }
         }
 
         @media (min-width:501px) and (max-width:700px) {
@@ -122,7 +117,7 @@
 <body>
     <div class="form-wrapper">
         <div class="logo">
-            <img src="./images/logo.png" alt="Логотип">
+            <img src="./images/logo.svg" alt="Логотип">
         </div>
         <canvas id="bubble"></canvas>
         <div class="container">
