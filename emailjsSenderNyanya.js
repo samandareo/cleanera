@@ -6,14 +6,17 @@
 
 const maleButton = document.getElementById('male-button');
 const femaleButton = document.getElementById('female-button');
+const errorMessage = document.getElementById('genderError');
 
 maleButton.addEventListener('click', () => {
     console.log('Male button is clicked');
+    errorMessage.style.display = 'none';
     handleButtonClick('Мужчина');
 });
 
 femaleButton.addEventListener('click', () => {
     console.log('Female button is clicked');
+    errorMessage.style.display = 'none';
     handleButtonClick('Женщина');
 });
 
@@ -21,6 +24,7 @@ var selectedGender = '';
 function handleButtonClick(buttonName) {
     selectedGender = buttonName
 }
+
 
 document.getElementById("registrationForm").addEventListener("submit", function(event) {
     event.preventDefault(); // Prevents default form submission
@@ -49,7 +53,7 @@ Email: ${formData.email}
 
         const botToken = '7580434956:AAE68J5NF1vupXhvIHojSAsnXXEr76p1XMo'; // Replace with your Telegram Bot token
         const chatId = '-1002295559153'; // Replace with your Telegram channel's chat ID
-
+    if (selectedGender === 'Мужчина' || selectedGender === 'Женщина'){
         fetch(`https://api.telegram.org/bot${botToken}/sendMessage`, {
             method: 'POST',
             headers: {
@@ -77,4 +81,8 @@ Email: ${formData.email}
             alert("Произошла ошибка. Попробуйте ещё раз.");
             console.error("Error sending email", error);
         });
+    }else{
+        errorMessage.style.display = 'block';
+        return;
+    }
 });
