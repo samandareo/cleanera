@@ -41,7 +41,7 @@ document.getElementById("registrationForm").addEventListener("submit", function(
 
     // Telegram bot
         const message = `
-        Новый запрос на няня👩🏼‍🍼:
+        Запрос на вакансию няни👩🏼‍🍼:
 
 Пол: ${selectedGender}
 Имя и Фамилия: ${formData.name}
