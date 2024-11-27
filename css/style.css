@@ -355,23 +355,29 @@ canvas {
     column-gap: 20px;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
 }
 
-.object-title > h3 {
+.object-title-text {
+    width: 70%;
+}
+.object-title-text h3 {
     color: #9A23C5;
-    font-size: 22px;
+    font-size: 20px;
     font-style: normal;
     font-weight: 700;
-    line-height: 30px; /* 125% */
+    line-height: 24px; /* 125% */
 }
 
 .object-title .object-title-icon {
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
 }
 
 .object-title-icon img {
     width: 100%;
+    height: auto;
+    object-fit: cover;
 }
 
 
