@@ -41,7 +41,7 @@ document.getElementById("registrationForm").addEventListener("submit", function(
 
     // Telegram bot
         const message = `
-        Запрос на уборку🧹:
+        Запрос на регистрацию как специалиста по уборке👤🧹:
 
 Пол: ${selectedGender}
 Имя и Фамилия: ${formData.name}
