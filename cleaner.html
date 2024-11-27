@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма регистрации</title>
+    <link rel="icon" type="image/png" href="./public/favicon.png">
+    <style>
+        .form-wrapper {
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f84f;
+            margin: 0;
+            padding: 40px 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+
+            flex-direction: column;
+        }
+
+        .logo {
+            width: 250px;
+            height: auto;
+        }
+
+        .logo img {
+            width: 100%;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            row-gap: 10px;
+            background: rgba(255, 255, 255, 0.938);
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            width: 500px;
+            padding: 35px;
+            text-align: center;
+        }
+        .title {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            row-gap: 10px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            text-align: left;
+            margin-bottom: 5px;
+            font-size: 14px;
+        }
+        .form-group input,
+        .form-group button {
+            width: 100%;
+            padding: 10px;
+            font-size: 14px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .form-group button {
+            background-color: #af3ff4;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .form-group button:hover {
+            background-color: #8d2cf5;
+        }
+        .gender-div {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 15px;
+        }
+        .gender-div button {
+            flex: 1;
+            margin: 0 5px;
+            padding: 10px;
+            font-size: 14px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background: #f8f8f8;
+            cursor: pointer;
+            transition: background 0.3s, color 0.3s;
+        }
+        .gender-div button.active {
+            background: #af3ff4;
+            color: white;
+        }
+
+        #genderError {
+            color: red;
+        }
+
+        canvas {
+            width: 100%;
+            height: 100%;
+            position: fixed;
+            z-index: -1;
+        }
+
+        @media screen and (max-width:500px) {
+            .container {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="form-wrapper">
+        <canvas id="bubble"></canvas>
+        <div class="logo">
+            <img src="./images/logo.svg" alt="Лого">
+        </div>
+        <div class="container">
+            <div class="title">Форма регистрации</div>
+            <form id="registrationForm">
+                <div class="gender">
+                    <div class="gender-div">
+                        <button type="button" class="gender-button" data-value="Мужчина" id="male-button">Мужчина</button>
+                        <button type="button" class="gender-button" data-value="Женщина" id="female-button">Женщина</button>
+                        <input type="hidden" id="gender" name="gender" required>
+                    </div>
+                    <span style="display: none;" id="genderError">Вам нужно выбрать один из них!</span>
+                </div>
+                <div class="form-group">
+                    <label for="name">Имя и Фамилия: </label>
+                    <input type="text" id="name" placeholder="Введите имя и фамилию" required>
+                </div>
+                <div class="form-group">
+                    <label for="dob">Дата рождения: </label>
+                    <input type="date" id="dob" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Номер телефона: </label>
+                    <input type="tel" id="phone" placeholder="Введите номер телефона" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email: </label>
+                    <input type="email" id="email" placeholder="Введите email" required>
+                </div>
+                <div class="form-group">
+                    <label for="address">Адрес: </label>
+                    <input type="text" id="address" placeholder="Введите адрес" required>
+                </div>
+                <div class="form-group">
+                    <button type="submit">Отправить</button>
+                </div>
+            </form>
+        </div>    
+    </div>
+
+    <script>
+
+        const genderButtons = document.querySelectorAll('.gender-button');
+        const genderInput = document.getElementById('gender-div');
+
+        genderButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                // Убираем класс "active" со всех кнопок
+                genderButtons.forEach(btn => btn.classList.remove('active'));
+                // Добавляем класс "active" на выбранную кнопку
+                button.classList.add('active');
+                // Устанавливаем значение в скрытое поле
+                genderInput.value = button.dataset.value;
+            });
+        });
+
+    </script>
+</body>
+<script type="text/javascript">
+    (function(){
+       emailjs.init({
+         publicKey: "1QP0UJhcm0mJGtnRR",
+       });
+    })();
+ </script>
+<script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script src="bubble.js"></script>
+<script src="emailjsSenderNyanya.js"></script>
+</html>
