@@ -1,18 +1,23 @@
 /* Сброс стилей */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* border: 1px red solid; */
-    font-family: serif;
     scroll-behavior: smooth;
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
     background-color: #fdfdfd;
     color: #333;
     height: 100vh;
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
 }
 
 .wrapper{
@@ -609,4 +614,8 @@ canvas {
 
 .footer-logo img {
     width: 100%;
+}
+
+.text_size_18 {
+    font-size: 18px;
 }
