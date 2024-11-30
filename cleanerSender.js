@@ -41,7 +41,7 @@ document.getElementById("registrationForm").addEventListener("submit", function(
 
     // Telegram bot
         const message = `
-        Запрос на вакансию няни👩🏼‍🍼:
+        Запрос на регистрацию как специалиста по уборке👤🧹:
 
 Пол: ${selectedGender}
 Имя и Фамилия: ${formData.name}
@@ -72,15 +72,15 @@ Email: ${formData.email}
             console.error("Error sending message to Telegram:", error);
         });
 
-    // Send email to admin
-    emailjs.send("service_tkuwkqg", "template_yor78zl", formData)
-        .then(function(response) {
-            window.location.href = "confirmation.html";
 
-        }, function(error) {
-            alert("Произошла ошибка. Попробуйте ещё раз.");
-            console.error("Error sending email", error);
-        });
+        emailjs.send("service_tkuwkqg", "template_yor78zl", formData)
+            .then(function(response) {
+                window.location.href = "confirmation.html";
+
+            }, function(error) {
+                alert("Произошла ошибка. Попробуйте ещё раз.");
+                console.error("Error sending email", error);
+            });
     }else{
         errorMessage.style.display = 'block';
         return;

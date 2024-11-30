@@ -1,3 +1,4 @@
+const dateError = document.getElementById("dateError");
 
 document.getElementById("nannyForm").addEventListener("submit", function(event) {
     event.preventDefault(); // Prevents default form submission
@@ -16,6 +17,15 @@ document.getElementById("nannyForm").addEventListener("submit", function(event) 
         address: document.getElementById("address").value,
     };
 
+    const startDateInDateFormat = new Date(formData.startDate);
+    const endDateInDateFormat = new Date(formData.endDate);
+
+    let dateTrue = true;
+    if (startDateInDateFormat > endDateInDateFormat) {
+        dateTrue = false;
+    }else {
+        dateError.style.display = "none";
+    }
         // Telegram bot
         const message = `
         Новый запрос на услугу няни (от родителей)👥:
@@ -37,6 +47,7 @@ Email: ${formData.email}
         const botToken = '7580434956:AAE68J5NF1vupXhvIHojSAsnXXEr76p1XMo'; // Replace with your Telegram Bot token
         const chatId = '-1002295559153'; // Replace with your Telegram channel's chat ID
 
+        if (dateTrue) {
         fetch(`https://api.telegram.org/bot${botToken}/sendMessage`, {
             method: 'POST',
             headers: {
@@ -63,4 +74,9 @@ Email: ${formData.email}
             alert("Произошла ошибка. Попробуйте ещё раз.");
             console.error("Error sending email", error);
         });
+    }else{
+        dateError.style.display = "block";
+        dateError.style.color = "red";
+        return;
+    }
 });
