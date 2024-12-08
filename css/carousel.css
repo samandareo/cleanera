@@ -1,0 +1,104 @@
+
+.client-comments {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px auto;
+}
+
+.client-comments h2 {
+  color: #9A23C5;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 50px;
+}
+
+.card-wrapper {
+  margin: 0 60px 35px;
+  padding: 20px 10px;
+  overflow: hidden;
+}
+
+.card-list .swiper-slide {
+  transform: scale(0.8);
+  transition: transform 0.5s ease, opacity 0.5s ease;
+  opacity: 0.5;
+}
+
+.card-list .swiper-slide-active {
+  transform: scale(1);
+  opacity: 1;
+  background: linear-gradient(158deg, rgba(154, 35, 197, 0.40) -1.93%, rgba(154, 35, 197, 0.80) 105.05%);
+}
+
+.card-list .swiper-slide:not(.swiper-slide-active) .card-text {
+  background-color: transparent;
+}
+
+.swiper-slide-active .card-text {
+  background-color: white;
+  border: none!important; /* Remove border for active slide */
+  transition: background-color 0.5s ease, border 0.5s ease;
+}
+
+.card-list .card-item {
+  list-style: none;
+  background-color: white;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.card-list .swiper-slide:not(.swiper-slide-active) {
+  transform: scale(0.8);
+  opacity: 0.5;
+}
+
+
+.card-list .card-item .card-content {
+  user-select: none;
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+
+  gap: 20px;
+}
+
+.card-list .card-content .card-image {
+  width: 50%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  border: 2px solid white;
+  border-radius: 100%;
+}
+
+.card-list .card-content .card-text {
+  border: 1px solid #9A23C5;
+
+  padding: 20px;
+  border-radius: 15px;
+}
+
+.card-list .card-content .card-text h2 {
+  color: purple;
+}
+
+.card-wrapper .swiper-pagination-bullet {
+  width: 13px;
+  height: 13px;
+  opacity: 0.5;
+  background: #9A23C5;
+}
+
+.card-wrapper .swiper-pagination-bullet-active {
+  opacity: 1;
+}
+
+.swiper-button-next::after, .swiper-button-prev::after {
+  color: #9A23C5;
+  font-size: 30px!important;
+}
