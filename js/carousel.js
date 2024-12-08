@@ -24,16 +24,25 @@ const swiper = new Swiper('.card-wrapper', {
       slidesPerView: 1,
       spaceBetween: 10,
       centeredSlides: false,
+      navigation: {
+        enabled: false,
+      }
     },
     768: {
       slidesPerView: 2,
       spaceBetween: 30,
       centeredSlides: false,
+      navigation: {
+        enabled: true,
+      }
     }, 
     1024: {
       slidesPerView: 3,
       spaceBetween: 30,
       centeredSlides: true,
+      navigation: {
+        enabled: true,
+      }
     },
   }
 })

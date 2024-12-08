@@ -252,6 +252,19 @@
     }
 
     /* Carousel */
+    .client-comments {
+        width: 100%;
+    }
+
+    .card-wrapper {
+        margin: 0!important;
+    }
+    .client-comments h2 {
+        font-size: 2rem!important;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 50px;
+    }
 
 
 }
@@ -477,6 +490,19 @@
     }
 
     /* Carousel */
+    .client-comments {
+        width: 80%!important;
+    }
+    .card-wrapper {
+        margin: 0!important;
+    }
+    .client-comments h2 {
+        font-size: 2rem!important;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 50px;
+    }
+    
 
 }
 
@@ -646,6 +672,13 @@
     }
 
     /* Carousel */
+    .card-list .card-content .card-text h2 {
+        font-size: 1.6rem!important;
+    }
+    .cl-comment p {
+        font-size: 14px!important;
+        text-align: justify;
+    }
 
 }
 
@@ -720,7 +753,13 @@
     }
 
     /* Carousel */
-
+    .card-list .card-content .card-text h2 {
+        font-size: 1.6rem!important;
+    }
+    .cl-comment p {
+        font-size: medium!important;
+        text-align: justify;
+    }
     
 
     
@@ -759,5 +798,12 @@
 
 
     /* Carousel */
-
+    .card-list .card-content .card-text h2 {
+        color: purple;
+        font-size: 1.6rem!important;
+    }
+    .cl-comment p {
+        font-size: small!important;
+        text-align: justify;
+    }
 }
